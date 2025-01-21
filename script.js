@@ -30,7 +30,7 @@ function animatePress(currentColour){
         $("#"+currentColour).removeClass("pressed");
     },100);
 }
-$(document).keypress(function(){
+$(document).keydown(function(){
     if(!started){
         $("#level-title").text("Level "+level);
         nextSequence();
